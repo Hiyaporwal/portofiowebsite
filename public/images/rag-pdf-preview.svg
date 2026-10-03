@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ragBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="12" fill="url(#ragBg)"/>
+  
+  <!-- Header -->
+  <rect x="20" y="20" width="760" height="46" rx="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="45" cy="43" r="6" fill="#ef4444"/>
+  <circle cx="65" cy="43" r="6" fill="#f59e0b"/>
+  <circle cx="85" cy="43" r="6" fill="#10b981"/>
+  <text x="115" y="48" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="13" font-weight="600">RAG PDF Chat · LangChain + ChromaDB + Groq Llama 3.3</text>
+  <rect x="625" y="30" width="135" height="26" rx="13" fill="#8b5cf6" fill-opacity="0.2"/>
+  <text x="643" y="47" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">⚡ Llama 3.3 70B</text>
+
+  <!-- Left: Ingestion & Vector DB -->
+  <rect x="20" y="80" width="230" height="400" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <text x="36" y="108" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DOCUMENT INGESTION</text>
+  
+  <!-- Upload File Box -->
+  <rect x="36" y="125" width="198" height="75" rx="6" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="75" y="155" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">📄 annual_report.pdf</text>
+  <text x="65" y="175" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">84 Pages · 412 Chunks Indexed</text>
+
+  <!-- ChromaDB vector status -->
+  <rect x="36" y="220" width="198" height="110" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="48" y="242" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600">🗄️ ChromaDB Vector Store</text>
+  <text x="48" y="265" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Embedding Model: MiniLM-L6</text>
+  <text x="48" y="285" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Chunk Size: 500 tokens</text>
+  <text x="48" y="302" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Overlap: 50 tokens</text>
+  <text x="48" y="320" fill="#10b981" font-family="system-ui, sans-serif" font-size="10">Cosine Similarity: Indexed</text>
+
+  <rect x="36" y="345" width="198" height="120" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="48" y="370" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Top-k Retrieved Context</text>
+  <text x="48" y="392" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Chunk #18 (score: 0.892)</text>
+  <text x="48" y="412" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Chunk #44 (score: 0.841)</text>
+  <text x="48" y="432" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Chunk #91 (score: 0.817)</text>
+  <text x="48" y="452" fill="#10b981" font-family="system-ui, sans-serif" font-size="10">● Context injected into prompt</text>
+
+  <!-- Right: Chat conversation UI -->
+  <rect x="265" y="80" width="515" height="400" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  
+  <!-- User message -->
+  <rect x="420" y="105" width="340" height="52" rx="10" fill="#312e81" stroke="#4f46e5" stroke-width="1"/>
+  <text x="435" y="127" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">What were the net operating margins in Q3?</text>
+  <text x="435" y="145" fill="#818cf8" font-family="system-ui, sans-serif" font-size="10">Query embedded via all-MiniLM-L6-v2</text>
+
+  <!-- Assistant reply -->
+  <rect x="285" y="175" width="475" height="150" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <circle cx="310" cy="202" r="12" fill="#8b5cf6"/>
+  <text x="304" y="207" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="bold">AI</text>
+  <text x="332" y="206" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Groq LLM (Llama 3.3 70B Versatile)</text>
+  
+  <text x="305" y="238" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">According to Section 4.2 (page 31) of the uploaded report, the net operating margin</text>
+  <text x="305" y="258" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">for Q3 reached <tspan fill="#34d399" font-weight="bold">23.4%</tspan>, reflecting an increase of 210 bps year-over-year.</text>
+  
+  <rect x="305" y="278" width="180" height="28" rx="4" fill="#0f172a" stroke="#4338ca" stroke-width="1"/>
+  <text x="318" y="296" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="10">📌 Source: Chunk #18 · Page 31</text>
+  
+  <text x="500" y="296" fill="#64748b" font-family="system-ui, sans-serif" font-size="10">Latency: 310ms (142 tok/sec)</text>
+
+  <!-- Input Bar -->
+  <rect x="285" y="420" width="475" height="46" rx="8" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+  <text x="305" y="448" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Ask a question about the uploaded documents...</text>
+  <rect x="690" y="428" width="60" height="30" rx="6" fill="#6366f1"/>
+  <text x="705" y="448" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Send</text>
+</svg>

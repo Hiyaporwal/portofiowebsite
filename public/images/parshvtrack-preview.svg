@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="12" fill="url(#bg)"/>
+  
+  <!-- Top bar -->
+  <rect x="20" y="20" width="760" height="48" rx="8" fill="#1e293b" opacity="0.6"/>
+  <circle cx="45" cy="44" r="6" fill="#ef4444"/>
+  <circle cx="65" cy="44" r="6" fill="#f59e0b"/>
+  <circle cx="85" cy="44" r="6" fill="#10b981"/>
+  <text x="115" y="49" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13" font-weight="600">ParshvTrack · Field Workforce Management ERP</text>
+  <rect x="630" y="32" width="130" height="24" rx="12" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="648" y="48" fill="#60a5fa" font-family="system-ui, sans-serif" font-size="11" font-weight="600">● 50+ Live Users</text>
+
+  <!-- Left Sidebar -->
+  <rect x="20" y="80" width="160" height="400" rx="8" fill="#131d2e" opacity="0.7"/>
+  <rect x="32" y="96" width="136" height="30" rx="6" fill="#3b82f6" opacity="0.25"/>
+  <text x="50" y="116" fill="#93c5fd" font-family="system-ui, sans-serif" font-size="12" font-weight="600">🗺 Live GPS Fleet</text>
+  <text x="50" y="152" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">📋 Attendance Log</text>
+  <text x="50" y="186" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">⚡ Task Dispatch</text>
+  <text x="50" y="220" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">👥 Employee Roster</text>
+  <text x="50" y="254" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">📊 Shift Reports</text>
+  <text x="50" y="288" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">⚙️ System Settings</text>
+
+  <!-- Main Map & Status Area -->
+  <rect x="195" y="80" width="380" height="250" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <!-- Simulated Map Grid & Routes -->
+  <path d="M 210,120 L 290,160 L 380,140 L 440,210 L 520,190" fill="none" stroke="#3b82f6" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 240,240 L 320,220 L 400,270 L 490,260" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="4 4"/>
+  <circle cx="290" cy="160" r="7" fill="#3b82f6" stroke="#93c5fd" stroke-width="2"/>
+  <circle cx="440" cy="210" r="7" fill="#10b981" stroke="#a7f3d0" stroke-width="2"/>
+  <circle cx="520" cy="190" r="8" fill="#f59e0b" stroke="#fef08a" stroke-width="2"/>
+  <rect x="210" y="92" width="140" height="22" rx="4" fill="#1e293b" opacity="0.9"/>
+  <text x="220" y="107" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Active Route #402 · In Transit</text>
+
+  <!-- Right KPI Cards -->
+  <rect x="590" y="80" width="190" height="115" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+  <text x="605" y="105" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">FIELD ATTENDANCE</text>
+  <text x="605" y="136" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="24" font-weight="bold">94.8%</text>
+  <text x="605" y="160" fill="#10b981" font-family="system-ui, sans-serif" font-size="11">▲ 48/51 Check-ins geo-verified</text>
+
+  <rect x="590" y="210" width="190" height="120" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+  <text x="605" y="235" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">DATABASE SYNC</text>
+  <text x="605" y="266" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="20" font-weight="bold">PostgreSQL</text>
+  <text x="605" y="290" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">REST API latency: 42ms</text>
+  <text x="605" y="310" fill="#10b981" font-family="system-ui, sans-serif" font-size="10">● Automated Transaction Locks</text>
+
+  <!-- Bottom Task & Employee Table -->
+  <rect x="195" y="345" width="585" height="135" rx="8" fill="url(#cardGrad)" stroke="#334155" stroke-width="1"/>
+  <text x="215" y="372" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Real-Time Field Tasks & Dispatch Workflow</text>
+  
+  <rect x="215" y="390" width="170" height="75" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+  <text x="225" y="410" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Site Survey · Zone 2</text>
+  <text x="225" y="428" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Agent: Rajesh K. (Online)</text>
+  <text x="225" y="448" fill="#10b981" font-family="system-ui, sans-serif" font-size="10">Geo-tag: Validated (±3m)</text>
+
+  <rect x="400" y="390" width="170" height="75" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+  <text x="410" y="410" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Material Delivery · Unit 5</text>
+  <text x="410" y="428" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Agent: Aman V. (En Route)</text>
+  <text x="410" y="448" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="10">ETA: 14 mins · Speed: 28 km/h</text>
+
+  <rect x="585" y="390" width="180" height="75" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+  <text x="595" y="410" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="11" font-weight="600">Audit Completion · Hub</text>
+  <text x="595" y="428" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="10">Agent: Priya S. (Submitted)</text>
+  <text x="595" y="448" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="10">Sync Status: Completed</text>
+</svg>
