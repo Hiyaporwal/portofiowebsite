@@ -13,16 +13,16 @@ export const Certifications: React.FC = () => {
   };
 
   return (
-    <section className="py-20 relative bg-[#090b12] border-t border-slate-800/80">
+    <section className="py-20 relative bg-[#F5F0E8] border-t border-[#D8CEBF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with Scroll Nav buttons */}
         <div className="flex items-center justify-between mb-8">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-amber-400 font-mono mb-2">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAE2D7] border border-[#D8CEBF] text-xs text-[#641E2B] font-mono mb-2">
               <BadgeCheck className="w-3.5 h-3.5" />
               <span>CONTINUOUS UPSKILLING</span>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#252321] tracking-tight">
               Certifications &amp; Credentials
             </h2>
           </div>
@@ -30,14 +30,14 @@ export const Certifications: React.FC = () => {
           <div className="hidden sm:flex items-center gap-2">
             <button
               onClick={() => scroll('left')}
-              className="p-2 rounded-xl bg-slate-900 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-colors cursor-pointer"
+              className="p-2.5 rounded-xl bg-[#EAE2D7] text-[#252321] hover:text-[#641E2B] hover:bg-[#F5F0E8] border border-[#D8CEBF] transition-colors cursor-pointer shadow-xs"
               aria-label="Scroll left"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               onClick={() => scroll('right')}
-              className="p-2 rounded-xl bg-slate-900 text-slate-300 hover:text-white border border-slate-800 hover:border-slate-700 transition-colors cursor-pointer"
+              className="p-2.5 rounded-xl bg-[#EAE2D7] text-[#252321] hover:text-[#641E2B] hover:bg-[#F5F0E8] border border-[#D8CEBF] transition-colors cursor-pointer shadow-xs"
               aria-label="Scroll right"
             >
               <ChevronRight className="w-4 h-4" />
@@ -53,24 +53,24 @@ export const Certifications: React.FC = () => {
           {CERTIFICATIONS_DATA.map((cert) => (
             <div
               key={cert.title}
-              className="min-w-[280px] sm:min-w-[320px] max-w-[340px] flex-shrink-0 snap-start glass-card rounded-2xl p-5 border border-slate-800/90 flex flex-col justify-between group hover:border-amber-500/40 transition-all"
+              className="min-w-[280px] sm:min-w-[320px] max-w-[340px] flex-shrink-0 snap-start glass-card rounded-2xl p-5 border border-[#D8CEBF] flex flex-col justify-between group hover:border-[#641E2B]/40 transition-all shadow-[0_2px_10px_-2px_rgba(37,35,33,0.04)]"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded border border-amber-500/20">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-[#641E2B] bg-[#F5F0E8] px-2.5 py-1 rounded-md border border-[#D8CEBF]">
                     {cert.issuer}
                   </span>
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                  <CheckCircle2 className="w-4 h-4 text-[#641E2B]" />
                 </div>
 
-                <h3 className="text-sm font-bold text-white group-hover:text-amber-300 transition-colors leading-snug">
+                <h3 className="text-sm font-bold text-[#252321] group-hover:text-[#641E2B] transition-colors leading-snug">
                   {cert.title}
                 </h3>
               </div>
 
-              <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono text-slate-400">
+              <div className="mt-4 pt-3 border-t border-[#D8CEBF] flex items-center justify-between text-[11px] font-mono text-[#736B63]">
                 <span>{cert.category}</span>
-                <span className="text-slate-300 font-semibold">{cert.credentialBadge}</span>
+                <span className="text-[#252321] font-bold">{cert.credentialBadge}</span>
               </div>
             </div>
           ))}

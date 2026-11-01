@@ -71,21 +71,21 @@ export interface CertificationItem {
 
 export const PERSONAL_INFO = {
   name: 'Hiya Porwal',
-  title: 'Computational Data Science | Data • AI/ML • Software',
+  title: 'Computational Data Science | Data • AI/ML • Financial Analytics • Software',
   tagline: 'I build with Data, AI & Software.',
   heroBio:
-    'Integrated M.Tech Computational Data Science student building practical solutions across analytics, business intelligence, machine learning, generative AI and software development.',
+    'Integrated M.Tech Computational Data Science student building practical solutions across analytics, business intelligence, machine learning, financial intelligence, generative AI and software engineering.',
   statement: {
     headline: 'I like turning messy data and real-world problems into useful systems.',
     detail:
-      'My experience spans business intelligence, data analysis, machine learning, generative AI and software development. I enjoy working from raw data and problem definition all the way to dashboards, predictive models and usable applications.',
+      'My experience spans business intelligence, data analysis, machine learning, financial analytics, generative AI and software development. I enjoy working from raw data and problem definition all the way to dashboards, predictive models and production-ready applications.',
   },
   about: {
     title: 'A little about me',
     paragraphs: [
       'I am an Integrated M.Tech Computational Data Science student at VIT Bhopal University (2023–2028).',
-      'My work sits at the active intersection of data analytics, business intelligence, AI/ML, and software engineering. I have worked with multi-source business datasets, industrial process sensor logs, interactive Power BI dashboards, machine learning models, REST APIs, PostgreSQL databases, and generative AI systems.',
-      'I enjoy learning by building and prefer projects where technology directly addresses an operational or practical problem.',
+      'My work sits at the active intersection of data analytics, business intelligence, AI/ML, financial intelligence, and software engineering. I have built solutions with financial time series, industrial process logs, interactive Power BI dashboards, machine learning & deep learning architectures (LSTM/GRU, XGBoost), FinBERT NLP models, REST APIs, PostgreSQL databases, and generative AI systems.',
+      'I enjoy learning by building and prefer projects where technology directly addresses an operational, financial, or industrial challenge.',
     ],
     interests: [
       {
@@ -120,7 +120,7 @@ export const PERSONAL_INFO = {
     linkedin: 'https://linkedin.com/in/hiya-porwal',
     github: 'https://github.com/Hiyaporwal',
     location: 'Bhopal / Rajasthan, India',
-    status: 'Open to Technical Internships & Roles (Data • AI/ML • Software)',
+    status: 'Open to Technical Internships & Roles (Data • AI/ML • Financial Analytics • Software)',
   },
 };
 
@@ -131,7 +131,7 @@ export const SKILLS_DATA: SkillItem[] = [
     category: 'DATA & ANALYTICS',
     icon: 'Terminal',
     description: 'Core scripting for data manipulation, statistical analysis, and machine learning pipelines.',
-    usedIn: ['RecovAI', 'Netflix Analysis', 'Blinkit Analysis', 'RAG PDF Chat', 'AI Financial Analyst'],
+    usedIn: ['FinSight AI', 'RecovAI', 'Netflix Analysis', 'Blinkit Analysis', 'RAG PDF Chat'],
   },
   {
     name: 'SQL',
@@ -166,14 +166,14 @@ export const SKILLS_DATA: SkillItem[] = [
     category: 'DATA & ANALYTICS',
     icon: 'Binary',
     description: 'High-performance vector operations, array transformations, and dataframe cleaning.',
-    usedIn: ['RecovAI', 'Blinkit Analysis', 'Netflix Analysis'],
+    usedIn: ['FinSight AI', 'RecovAI', 'Blinkit Analysis', 'Netflix Analysis'],
   },
   {
     name: 'Matplotlib & Seaborn',
     category: 'DATA & ANALYTICS',
     icon: 'PieChart',
     description: 'Exploratory data analysis, distribution plotting, heatmaps, and trend visualizations.',
-    usedIn: ['Netflix Analysis', 'Blinkit Analysis'],
+    usedIn: ['Netflix Analysis', 'Blinkit Analysis', 'FinSight AI'],
   },
   {
     name: 'Excel',
@@ -183,65 +183,65 @@ export const SKILLS_DATA: SkillItem[] = [
     usedIn: ['SVS Datalytics', 'HCL Preprocessing'],
   },
 
-  // AI / ML
+  // AI / ML & DEEP LEARNING
   {
-    name: 'Scikit-learn',
+    name: 'Deep Learning (LSTM & GRU)',
     category: 'AI / ML',
     icon: 'Cpu',
-    description: 'Supervised & unsupervised learning pipelines, regression, clustering, and cross-validation.',
-    usedIn: ['RecovAI', 'Healthcare Prediction System'],
+    description: 'Sequential neural networks for multi-step financial time-series forecasting.',
+    usedIn: ['FinSight AI'],
   },
   {
-    name: 'XGBoost',
+    name: 'FinBERT & Financial NLP',
+    category: 'AI / ML',
+    icon: 'Search',
+    description: 'Transformer-based financial sentiment classification over news headlines.',
+    usedIn: ['FinSight AI'],
+  },
+  {
+    name: 'XGBoost & Scikit-learn',
     category: 'AI / ML',
     icon: 'Zap',
-    description: 'Gradient boosted trees for high-precision tabular regression and prediction.',
-    usedIn: ['RecovAI', 'AI Financial Analyst'],
-  },
-  {
-    name: 'Predictive Modeling',
-    category: 'AI / ML',
-    icon: 'TrendingUp',
-    description: 'End-to-end model training, hyperparameter tuning, and cross-validation workflows.',
-    usedIn: ['RecovAI', 'AI Financial Analyst'],
+    description: 'Gradient boosted trees, Random Forests, and cross-validated regression models.',
+    usedIn: ['FinSight AI', 'RecovAI', 'AI Financial Analyst'],
   },
   {
     name: 'Feature Engineering',
     category: 'AI / ML',
     icon: 'Workflow',
-    description: 'Creating domain-specific ratios, handling collinearity, and feature encoding.',
-    usedIn: ['RecovAI', 'Data-drift-detection'],
+    description: 'Technical indicators (RSI, MACD, Bollinger Bands), lag features, and zero look-ahead hygiene.',
+    usedIn: ['FinSight AI', 'RecovAI', 'Data-drift-detection'],
   },
   {
     name: 'SHAP (Explainable AI)',
     category: 'AI / ML',
-    icon: 'Search',
+    icon: 'Sparkles',
     description: 'Shapley values to quantify feature contributions and interpret model predictions.',
-    usedIn: ['RecovAI'],
+    usedIn: ['RecovAI', 'FinSight AI'],
   },
   {
-    name: 'RAG & LangChain',
+    name: 'RAG & Vector Search',
     category: 'AI / ML',
     icon: 'Network',
-    description: 'Document chunking, prompt engineering, chain orchestration, and context injection.',
-    usedIn: ['RAG PDF Chat'],
+    description: 'Document chunking, sentence embeddings, FAISS & ChromaDB vector indexing, and cited generation.',
+    usedIn: ['FinSight AI', 'RAG PDF Chat'],
   },
   {
-    name: 'Groq & Llama 3.3',
-    category: 'AI / ML',
-    icon: 'Sparkles',
-    description: 'High-speed LLM inference with ultra-low latency for contextual generation.',
-    usedIn: ['RAG PDF Chat', 'RecovAI Assistant'],
-  },
-  {
-    name: 'ChromaDB',
+    name: 'Groq & LLM APIs',
     category: 'AI / ML',
     icon: 'Boxes',
-    description: 'Vector store for cosine-similarity semantic retrieval and chunk indexing.',
-    usedIn: ['RAG PDF Chat'],
+    description: 'High-speed LLM inference (Llama 3.3, Gemini) for contextual financial assistants.',
+    usedIn: ['RAG PDF Chat', 'FinSight AI', 'RecovAI'],
   },
 
   // SOFTWARE
+  {
+    name: 'Flask & Python Web',
+    category: 'SOFTWARE',
+    icon: 'Server',
+    description: 'Flask 3.x web applications, Blueprints, SQLAlchemy ORM, and REST APIs.',
+    usedIn: ['FinSight AI', 'AI Financial Analyst'],
+  },
   {
     name: 'React.js',
     category: 'SOFTWARE',
@@ -261,14 +261,14 @@ export const SKILLS_DATA: SkillItem[] = [
     category: 'SOFTWARE',
     icon: 'ArrowLeftRight',
     description: 'Contract-first API design, CRUD endpoints, token authentication, and data transfer.',
-    usedIn: ['ParshvTrack ERP', 'FastAPI Backend for RecovAI'],
+    usedIn: ['FinSight AI', 'ParshvTrack ERP', 'FastAPI Backend for RecovAI'],
   },
   {
     name: 'JavaScript / HTML / CSS',
     category: 'SOFTWARE',
     icon: 'Code',
     description: 'Modern ES6+, responsive layouts, Flexbox/Grid, and dynamic interactions.',
-    usedIn: ['ParshvTrack ERP', 'ToxiGuard AI'],
+    usedIn: ['FinSight AI', 'ParshvTrack ERP', 'ToxiGuard AI'],
   },
 
   // DATABASES
@@ -280,21 +280,35 @@ export const SKILLS_DATA: SkillItem[] = [
     usedIn: ['ParshvTrack ERP', 'ParshWebCraft Internships'],
   },
   {
+    name: 'SQLite & SQLAlchemy',
+    category: 'DATABASES',
+    icon: 'HardDrive',
+    description: 'Lightweight embedded storage, ORM data models, and Alembic schema migrations.',
+    usedIn: ['FinSight AI', 'RecovAI'],
+  },
+  {
     name: 'MySQL',
     category: 'DATABASES',
     icon: 'Table',
     description: 'Relational data structures, normalized schemas, and structured storage.',
     usedIn: ['Academic Projects', 'VIT Labs'],
   },
-  {
-    name: 'SQLite',
-    category: 'DATABASES',
-    icon: 'HardDrive',
-    description: 'Lightweight embedded storage for standalone applications and local persistence.',
-    usedIn: ['RecovAI'],
-  },
 
-  // TOOLS
+  // TOOLS & MLOPS
+  {
+    name: 'Docker & Docker Compose',
+    category: 'TOOLS',
+    icon: 'Boxes',
+    description: 'Containerization, environment isolation, and multi-service orchestration.',
+    usedIn: ['FinSight AI'],
+  },
+  {
+    name: 'CI/CD & GitHub Actions',
+    category: 'TOOLS',
+    icon: 'Workflow',
+    description: 'Automated test workflows, pytest suites, and build validation checks.',
+    usedIn: ['FinSight AI'],
+  },
   {
     name: 'Git & GitHub',
     category: 'TOOLS',
@@ -403,8 +417,67 @@ export const EXPERIENCE_DATA: Experience[] = [
 
 export const FEATURED_PROJECTS: Project[] = [
   {
-    id: 'recovai',
+    id: 'finsight-ai',
     number: '01',
+    title: 'FinSight AI',
+    subtitle: 'AI-Powered Financial Intelligence Platform',
+    category: 'AI / ML',
+    label: 'FINANCIAL AI / ML · DEEP LEARNING · NLP',
+    description:
+      'An AI-powered financial intelligence platform for NSE stocks that combines machine learning, deep learning (LSTM & GRU), FinBERT financial text sentiment analysis, and a document RAG assistant into a production-grade Flask architecture.',
+    image: '/images/finsight-preview.svg',
+    gallery: [
+      '/images/finsight-preview.svg',
+    ],
+    pipeline: [
+      'NSE Historical Price Feed',
+      'Leak-Free Feature Engineering',
+      'ML & LSTM/GRU Forecasting',
+      'FinBERT News Sentiment',
+      'FAISS Financial RAG',
+      'Flask & Dockerized CI/CD',
+    ],
+    features: [
+      'Multi-model forecasting comparing XGBoost, Random Forest, LSTM, and GRU on 1-Day (h1) and 5-Day (h5) horizons',
+      'Strict chronological train/test splitting with StandardScaler fitted solely on training rows (zero look-ahead bias)',
+      '22 engineered features including Wilder’s RSI (14), MACD, Bollinger Bands (%b, width), EMAs, and 20-day volatility',
+      'Model evaluation on actual price scale tracking MAE, RMSE, safe MAPE, return MAE, and directional accuracy vs baseline',
+      'ProsusAI/finbert transformer pipeline classifying recent stock headlines into positive, neutral, and negative sentiment',
+      'Retrieval-Augmented Generation for uploaded corporate annual reports using PyPDF, sentence-transformers, and FAISS',
+      'Production Flask 3.1 backend with SQLAlchemy, Alembic migrations, rate limiting, Docker container, and GitHub Actions CI',
+    ],
+    technologies: [
+      'Python',
+      'Flask',
+      'TensorFlow (LSTM & GRU)',
+      'XGBoost',
+      'Scikit-learn',
+      'FinBERT (Transformers)',
+      'Sentence-Transformers',
+      'FAISS',
+      'SQLAlchemy',
+      'Docker',
+      'GitHub Actions',
+    ],
+    myContribution:
+      'Architected and implemented the platform: engineered 22 technical indicators with zero look-ahead bias, built and evaluated multi-horizon machine learning (XGBoost, Random Forest) and deep learning (LSTM, GRU) models, integrated FinBERT headline sentiment with thread-safe caching, developed the FAISS-powered PDF report summariser, and containerized the service with automated CI testing.',
+    problem:
+      'Investors and analysts face fragmented tools: price forecasts frequently suffer from hidden data leakage, headline sentiment is difficult to synthesize systematically across volatile cycles, and digging through 100+ page annual filings for key ratios is tedious and time-consuming.',
+    approach:
+      'Built an end-to-end financial intelligence system with strict mathematical hygiene. Engineered technical indicators strictly from past timeframes, benchmarked ensemble regressors alongside sequential LSTM/GRU models evaluated on true price scales, integrated FinBERT for contextual news tone analysis, and implemented a FAISS vector search pipeline citing specific page numbers from corporate filings.',
+    results: [
+      'Engineered leak-free chronological preprocessing and standardized evaluation across MAE, RMSE, safe MAPE, and directional accuracy.',
+      'Implemented multi-horizon forecasting comparing tree-based ensembles with recurrent LSTM and GRU neural networks.',
+      'Integrated FinBERT transformer pipeline for multi-class market headline sentiment classification with thread-safe caching.',
+      'Developed a document intelligence RAG assistant retrieving and citing verified figures directly from corporate annual reports.',
+      'Configured Docker containerization, Alembic schema migrations, and GitHub Actions CI test suites for reliable deployment.',
+    ],
+    githubUrl: 'https://github.com/Hiyaporwal/finsight-ai',
+    isFeatured: true,
+  },
+  {
+    id: 'recovai',
+    number: '02',
     title: 'RecovAI',
     subtitle: 'Copper Recovery Prediction & Monitoring System',
     category: 'AI / ML',
@@ -449,47 +522,6 @@ export const FEATURED_PROJECTS: Project[] = [
       'Constructed a functional decision-support architecture linking industrial data to actionable predictions.',
     ],
     githubUrl: 'https://github.com/Hiyaporwal/RecovAI',
-    isFeatured: true,
-  },
-  {
-    id: 'parshvtrack',
-    number: '02',
-    title: 'ParshvTrack',
-    subtitle: 'Field Workforce Management ERP',
-    category: 'SOFTWARE',
-    label: 'SOFTWARE · ERP · FULL STACK',
-    description:
-      'A robust workforce management ERP designed for distributed field teams, combining real-time GPS tracking, geo-tagged attendance verification, employee roster management, task dispatch workflows, and database-backed operational reporting.',
-    image: '/images/parshvtrack-preview.svg',
-    pipeline: [
-      'Field Employee Device',
-      'React UI Client',
-      'Node.js REST API',
-      'PostgreSQL Relational DB',
-      'Operational Dashboard',
-    ],
-    features: [
-      'Live GPS fleet location tracking',
-      'Geo-tagged attendance verification (±3m perimeter)',
-      'Employee directory and roster workflows',
-      'Field task assignment and status lifecycles',
-      'Payroll-related attendance summaries',
-      'Secure REST APIs with database-backed reporting',
-    ],
-    technologies: ['React', 'Node.js', 'JavaScript', 'PostgreSQL', 'REST APIs', 'Express', 'Tailwind CSS'],
-    myContribution:
-      'Collaborated on full-stack web engineering and business reporting: built dynamic UI components in React, integrated backend REST endpoints with PostgreSQL schemas, and developed operational performance dashboards for managerial oversight.',
-    problem:
-      'Field service teams operated with fragmented reporting: attendance was recorded on paper or messaging groups, field routes were unverified, and managerial reporting lagged by several days, creating operational blind spots and payroll discrepancies.',
-    approach:
-      'Built a centralized, modular ERP platform with a responsive React interface connected via structured REST APIs to a PostgreSQL database. Implemented geo-tagged check-ins, automated status transitions for tasks, and structured database queries for rapid report generation.',
-    results: [
-      'Actively deployed and verified across 50+ field employees.',
-      'Unified attendance, task dispatch, and location validation into a single workflow.',
-      'Eliminated manual attendance spreadsheets and reduced operational verification lag.',
-      'Demonstrated production-grade software engineering and relational database design.',
-    ],
-    githubUrl: 'https://github.com/parshwebcraft/parshvtrack',
     isFeatured: true,
   },
   {
@@ -548,8 +580,48 @@ export const FEATURED_PROJECTS: Project[] = [
 export const ALL_PROJECTS: Project[] = [
   ...FEATURED_PROJECTS,
   {
-    id: 'uber-power-bi',
+    id: 'parshvtrack',
     number: '04',
+    title: 'ParshvTrack',
+    subtitle: 'Field Workforce Management ERP',
+    category: 'SOFTWARE',
+    label: 'SOFTWARE · ERP · FULL STACK',
+    description:
+      'A robust workforce management ERP designed for distributed field teams, combining real-time GPS tracking, geo-tagged attendance verification, employee roster management, task dispatch workflows, and database-backed operational reporting.',
+    image: '/images/parshvtrack-preview.svg',
+    pipeline: [
+      'Field Employee Device',
+      'React UI Client',
+      'Node.js REST API',
+      'PostgreSQL Relational DB',
+      'Operational Dashboard',
+    ],
+    features: [
+      'Live GPS fleet location tracking',
+      'Geo-tagged attendance verification (±3m perimeter)',
+      'Employee directory and roster workflows',
+      'Field task assignment and status lifecycles',
+      'Payroll-related attendance summaries',
+      'Secure REST APIs with database-backed reporting',
+    ],
+    technologies: ['React', 'Node.js', 'JavaScript', 'PostgreSQL', 'REST APIs', 'Express', 'Tailwind CSS'],
+    myContribution:
+      'Collaborated on full-stack web engineering and business reporting: built dynamic UI components in React, integrated backend REST endpoints with PostgreSQL schemas, and developed operational performance dashboards for managerial oversight.',
+    problem:
+      'Field service teams operated with fragmented reporting: attendance was recorded on paper or messaging groups, field routes were unverified, and managerial reporting lagged by several days, creating operational blind spots and payroll discrepancies.',
+    approach:
+      'Built a centralized, modular ERP platform with a responsive React interface connected via structured REST APIs to a PostgreSQL database. Implemented geo-tagged check-ins, automated status transitions for tasks, and structured database queries for rapid report generation.',
+    results: [
+      'Actively deployed and verified across 50+ field employees.',
+      'Unified attendance, task dispatch, and location validation into a single workflow.',
+      'Eliminated manual attendance spreadsheets and reduced operational verification lag.',
+      'Demonstrated production-grade software engineering and relational database design.',
+    ],
+    githubUrl: 'https://github.com/parshwebcraft/parshvtrack',
+  },
+  {
+    id: 'uber-power-bi',
+    number: '05',
     title: 'Uber Ride Bookings Dashboard',
     subtitle: 'Operational & Revenue Analytics Dashboard',
     category: 'DATA & BI',
@@ -583,7 +655,7 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     id: 'blinkit-analysis',
-    number: '05',
+    number: '06',
     title: 'Blinkit Data Analysis',
     subtitle: 'Exploratory Data Analysis on Quick-Commerce Sales',
     category: 'DATA & BI',
@@ -613,7 +685,7 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     id: 'netflix-analysis',
-    number: '06',
+    number: '07',
     title: 'Netflix Data Analysis',
     subtitle: 'Catalog Content & Streaming Trends EDA',
     category: 'DATA & BI',
@@ -643,7 +715,7 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     id: 'ai-financial-analyst',
-    number: '07',
+    number: '08',
     title: 'AI Financial Analyst',
     subtitle: 'Stock Trend & Market Sentiment Prediction',
     category: 'AI / ML',
@@ -672,7 +744,7 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     id: 'toxiguard-ai',
-    number: '08',
+    number: '09',
     title: 'ToxiGuard AI',
     subtitle: 'Real-Time Web Content Moderation Extension',
     category: 'AI / ML',

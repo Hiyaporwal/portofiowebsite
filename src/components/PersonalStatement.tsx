@@ -27,31 +27,31 @@ export const PersonalStatement: React.FC = () => {
     {
       step: '04',
       title: 'Usable Applications',
-      desc: 'Packaging models and data into reliable software interfaces using React, REST APIs, Node.js, and PostgreSQL.',
+      desc: 'Packaging models and data into reliable software interfaces using Flask, React, REST APIs, and PostgreSQL.',
       icon: AppWindow,
       highlight: '50+ active field users',
     },
   ];
 
   return (
-    <section className="py-20 relative border-y border-slate-800/80 bg-gradient-to-b from-[#090a0f] via-[#0d101b] to-[#090a0f]">
+    <section className="py-20 relative border-y border-[#D8CEBF] bg-[#EAE2D7]/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Editorial Statement Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="inline-block mb-4">
-            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-full">
+            <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#641E2B] bg-[#641E2B]/10 border border-[#641E2B]/20 px-3.5 py-1.5 rounded-full">
               Philosophy & Engineering Approach
             </span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-snug mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#252321] tracking-tight leading-snug mb-6">
             “I like turning messy data and real-world problems into useful systems.”
           </h2>
 
-          <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-3xl mx-auto">
-            My experience spans business intelligence, data analysis, machine learning, generative AI,
+          <p className="text-base sm:text-lg text-[#5C554E] leading-relaxed max-w-3xl mx-auto">
+            My experience spans business intelligence, data analysis, machine learning, financial analytics, generative AI,
             and software development. I enjoy working from raw data and problem definition all the way
-            to dashboards, predictive models, and usable applications.
+            to dashboards, predictive models, and production-ready applications.
           </p>
         </div>
 
@@ -62,35 +62,35 @@ export const PersonalStatement: React.FC = () => {
             return (
               <div
                 key={item.step}
-                className="glass-card rounded-2xl p-6 flex flex-col justify-between group hover:border-amber-500/40 relative overflow-hidden"
+                className="glass-card rounded-2xl p-6 flex flex-col justify-between group relative overflow-hidden"
               >
                 {/* Background number watermark */}
-                <span className="absolute -right-2 -bottom-4 text-6xl font-black font-mono text-slate-800/25 select-none pointer-events-none group-hover:text-amber-500/10 transition-colors">
+                <span className="absolute -right-2 -bottom-4 text-6xl font-black font-mono text-[#B78B79]/20 select-none pointer-events-none group-hover:text-[#641E2B]/15 transition-colors">
                   {item.step}
                 </span>
 
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:border-amber-500/40 transition-all">
+                    <div className="w-10 h-10 rounded-xl bg-[#F5F0E8] border border-[#D8CEBF] flex items-center justify-center text-[#641E2B] group-hover:scale-105 group-hover:border-[#641E2B]/40 transition-all shadow-xs">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-mono font-bold text-slate-300 bg-slate-900/80 px-2 py-0.5 rounded border border-slate-800">
+                    <span className="text-xs font-mono font-bold text-[#641E2B] bg-[#F5F0E8] px-2 py-0.5 rounded border border-[#D8CEBF]">
                       STAGE {item.step}
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-base font-bold text-[#252321] mb-2 group-hover:text-[#641E2B] transition-colors">
                     {item.title}
                   </h3>
 
-                  <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                  <p className="text-xs text-[#5C554E] leading-relaxed mb-4">
                     {item.desc}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-slate-800/80 flex items-center justify-between text-[11px] font-mono">
-                  <span className="text-slate-300">Evidence:</span>
-                  <span className="text-amber-400 font-semibold">{item.highlight}</span>
+                <div className="pt-3 border-t border-[#D8CEBF] flex items-center justify-between text-[11px] font-mono">
+                  <span className="text-[#6B635B]">Evidence:</span>
+                  <span className="text-[#641E2B] font-bold">{item.highlight}</span>
                 </div>
               </div>
             );

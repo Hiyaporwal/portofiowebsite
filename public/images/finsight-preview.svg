@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ivoryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F6F0"/>
+      <stop offset="100%" stop-color="#EAE2D7"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#F5F0E8" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="oxbloodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#641E2B"/>
+      <stop offset="100%" stop-color="#8E2C3D"/>
+    </linearGradient>
+    <linearGradient id="terracottaGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B78B79"/>
+      <stop offset="100%" stop-color="#CBB1A3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" rx="14" fill="url(#ivoryBg)" stroke="#D8CEBF" stroke-width="1.5"/>
+
+  <!-- Top Window Header -->
+  <rect x="20" y="18" width="760" height="46" rx="10" fill="#EAE2D7" stroke="#D8CEBF" stroke-width="1"/>
+  <circle cx="44" cy="41" r="5.5" fill="#641E2B"/>
+  <circle cx="62" cy="41" r="5.5" fill="#B78B79"/>
+  <circle cx="80" cy="41" r="5.5" fill="#8E2C3D" fill-opacity="0.5"/>
+  <text x="108" y="46" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="-0.2">FinSight AI · Financial Intelligence Platform</text>
+  <rect x="585" y="28" width="180" height="26" rx="13" fill="#641E2B" fill-opacity="0.1" stroke="#641E2B" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="600" y="45" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">● NSE Stocks · ML/DL + NLP</text>
+
+  <!-- Left Sidebar: Stock Focus, Technical Indicators & Sentiment -->
+  <rect x="20" y="74" width="235" height="406" rx="10" fill="url(#cardGrad)" stroke="#D8CEBF" stroke-width="1"/>
+  
+  <!-- Active Symbol -->
+  <rect x="34" y="88" width="207" height="48" rx="8" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="46" y="107" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">RELIANCE.NS</text>
+  <text x="46" y="124" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10">Energy &amp; Retail · ₹2,948.50</text>
+  <rect x="175" y="97" width="54" height="20" rx="4" fill="#641E2B" fill-opacity="0.12"/>
+  <text x="184" y="111" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">NSE Top</text>
+
+  <!-- Forecast Horizons -->
+  <text x="36" y="156" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="0.5">FORECAST HORIZONS</text>
+  <rect x="34" y="166" width="98" height="28" rx="6" fill="#641E2B"/>
+  <text x="56" y="184" fill="#F5F0E8" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">1-Day (h1)</text>
+  <rect x="142" y="166" width="98" height="28" rx="6" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="164" y="184" fill="#6B635B" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600">5-Day (h5)</text>
+
+  <!-- Feature Engineering Pipeline (Zero Look-ahead) -->
+  <text x="36" y="218" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="0.5">TECHNICAL INDICATORS</text>
+  <rect x="34" y="228" width="207" height="88" rx="8" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="46" y="247" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600">Wilder's RSI (14): <tspan fill="#641E2B" font-family="'JetBrains Mono', monospace" font-weight="700">58.4</tspan></text>
+  <text x="46" y="265" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600">MACD Hist: <tspan fill="#641E2B" font-family="'JetBrains Mono', monospace" font-weight="700">+4.12 (Bullish)</tspan></text>
+  <text x="46" y="283" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="600">Bollinger %B: <tspan fill="#641E2B" font-family="'JetBrains Mono', monospace" font-weight="700">0.68 (Mid-Band)</tspan></text>
+  <text x="46" y="301" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5">SMA (10/20/50) + EMA + Volatility-20</text>
+
+  <!-- FinBERT Sentiment Engine -->
+  <text x="36" y="338" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" letter-spacing="0.5">FINBERT HEADLINE NLP</text>
+  <rect x="34" y="348" width="207" height="116" rx="8" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="46" y="368" fill="#641E2B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="700">ProsusAI / FinBERT Pipeline</text>
+  <text x="46" y="384" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5">Market headlines tone classification</text>
+  
+  <rect x="46" y="396" width="183" height="8" rx="4" fill="#EAE2D7"/>
+  <rect x="46" y="396" width="124" height="8" rx="4" fill="#641E2B"/>
+  <rect x="170" y="396" width="44" height="8" rx="4" fill="#B78B79"/>
+  <rect x="214" y="396" width="15" height="8" rx="4" fill="#847C74"/>
+
+  <text x="46" y="420" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">Pos: 68%</text>
+  <text x="115" y="420" fill="#6B635B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Neu: 24%</text>
+  <text x="178" y="420" fill="#847C74" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Neg: 8%</text>
+  <text x="46" y="445" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9">Cached per-headline · Batch inference</text>
+
+  <!-- Right Main Area: Price Trajectory, ML vs DL Comparison & Document RAG -->
+  <rect x="268" y="74" width="512" height="240" rx="10" fill="url(#cardGrad)" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="286" y="100" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="700">Model Forecast vs Actual Price (Chronological Evaluation)</text>
+  <text x="286" y="116" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10.5">Evaluation strictly on price scale: True vs Predicted Close (No Look-ahead)</text>
+
+  <!-- Chart Canvas -->
+  <rect x="286" y="128" width="476" height="170" rx="8" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  
+  <!-- Grid Lines -->
+  <line x1="300" y1="160" x2="746" y2="160" stroke="#EAE2D7" stroke-width="1"/>
+  <line x1="300" y1="200" x2="746" y2="200" stroke="#EAE2D7" stroke-width="1"/>
+  <line x1="300" y1="240" x2="746" y2="240" stroke="#EAE2D7" stroke-width="1"/>
+  <line x1="300" y1="280" x2="746" y2="280" stroke="#EAE2D7" stroke-width="1"/>
+
+  <!-- Historical Price Series Curve (Charcoal) -->
+  <path d="M 310,240 Q 350,210 400,225 T 480,180 T 560,195 T 630,165" fill="none" stroke="#252321" stroke-width="2.5" stroke-linecap="round"/>
+  
+  <!-- Forecast Path Split (h1 / h5) (Oxblood) -->
+  <path d="M 630,165 Q 670,145 715,150 T 742,138" fill="none" stroke="#641E2B" stroke-width="2.5" stroke-dasharray="4 3" stroke-linecap="round"/>
+  
+  <!-- Confidence Interval Area (Terracotta Tint) -->
+  <polygon points="630,165 670,135 715,138 742,125 742,152 715,162 670,158" fill="#B78B79" fill-opacity="0.25"/>
+
+  <circle cx="630" cy="165" r="4.5" fill="#641E2B"/>
+  <text x="618" y="185" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">T (Today)</text>
+  <circle cx="742" cy="138" r="4" fill="#B78B79"/>
+  <text x="702" y="124" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700">+5D Target</text>
+
+  <!-- Legend -->
+  <rect x="300" y="136" width="10" height="3" fill="#252321"/>
+  <text x="315" y="140" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600">Historical Close</text>
+  <rect x="400" y="136" width="10" height="3" fill="#641E2B"/>
+  <text x="415" y="140" fill="#641E2B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9" font-weight="600">ML/DL Forecast</text>
+  <rect x="500" y="136" width="10" height="8" rx="2" fill="#B78B79" fill-opacity="0.35"/>
+  <text x="515" y="140" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9">Forecast Interval</text>
+
+  <!-- Bottom Row: Multi-Model Evaluation & RAG Financial Assistant -->
+  <rect x="268" y="326" width="250" height="154" rx="10" fill="url(#cardGrad)" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="282" y="348" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">MODEL EVALUATION BENCHMARK</text>
+  
+  <rect x="282" y="358" width="222" height="24" rx="5" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="0.8"/>
+  <text x="290" y="374" fill="#641E2B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="700">XGBoost Regression</text>
+  <text x="430" y="374" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Dir. Acc: 64.2%</text>
+
+  <rect x="282" y="386" width="222" height="24" rx="5" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="0.8"/>
+  <text x="290" y="402" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="600">LSTM Deep Learning</text>
+  <text x="430" y="402" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Dir. Acc: 61.8%</text>
+
+  <rect x="282" y="414" width="222" height="24" rx="5" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="0.8"/>
+  <text x="290" y="430" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="600">GRU Neural Network</text>
+  <text x="430" y="430" fill="#6B635B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Dir. Acc: 62.5%</text>
+
+  <rect x="282" y="442" width="222" height="24" rx="5" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="0.8"/>
+  <text x="290" y="458" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9.5" font-weight="600">Random Forest Regressor</text>
+  <text x="430" y="458" fill="#6B635B" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600">Dir. Acc: 59.4%</text>
+
+  <!-- Right Bottom: RAG Document Intelligence & MLOps -->
+  <rect x="530" y="326" width="250" height="154" rx="10" fill="url(#cardGrad)" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="544" y="348" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">FINANCIAL RAG ASSISTANT</text>
+  
+  <rect x="544" y="358" width="222" height="66" rx="6" fill="#F5F0E8" stroke="#B78B79" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="554" y="375" fill="#641E2B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="10" font-weight="700">📄 annual_report_fy25.pdf</text>
+  <text x="554" y="391" fill="#252321" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="9">FAISS Vector Index · sentence-transformers</text>
+  <text x="554" y="407" fill="#6B635B" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="8.5">"Operating EBITDA grew 18.2% YOY (p. 42)"</text>
+
+  <rect x="544" y="432" width="222" height="34" rx="6" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="1"/>
+  <text x="554" y="446" fill="#252321" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="700">MLOPS ARCHITECTURE</text>
+  <text x="554" y="458" fill="#641E2B" font-family="'JetBrains Mono', monospace" font-size="8.5">Docker · Alembic · GitHub Actions CI</text>
+</svg>

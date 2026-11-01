@@ -36,11 +36,11 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#090a0f] text-slate-200 selection:bg-amber-500/20 selection:text-amber-200">
+    <div className="min-h-screen bg-[#F5F0E8] text-[#252321] selection:bg-[#641E2B]/18 selection:text-[#641E2B]">
       {/* Sticky Navbar */}
       <Navbar onOpenResume={() => setIsResumeOpen(true)} />
 
-      {/* Main Flow */}
+      {/* Main Editorial Flow */}
       <main>
         {/* HERO */}
         <Hero onOpenResume={() => setIsResumeOpen(true)} />
@@ -57,10 +57,10 @@ export function App() {
         {/* EXPERIENCE */}
         <Experience onSelectProject={handleSelectProjectId} />
 
-        {/* FEATURED PROJECTS */}
+        {/* FEATURED PROJECTS (01 FinSight AI, 02 RecovAI, 03 RAG PDF Chat) */}
         <FeaturedProjects onOpenCaseStudy={(proj) => setSelectedCaseStudy(proj)} />
 
-        {/* MORE PROJECTS & ANALYTICS */}
+        {/* MORE PROJECTS & ANALYTICS (ParshvTrack, Uber, Blinkit, Netflix, etc.) */}
         <DataProjects onOpenCaseStudy={(proj) => setSelectedCaseStudy(proj)} />
 
         {/* EDUCATION */}

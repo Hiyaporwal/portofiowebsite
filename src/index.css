@@ -3,31 +3,37 @@
 @theme {
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  --font-serif: 'Newsreader', Georgia, Cambria, serif;
   
-  --color-brand-amber: #f59e0b;
-  --color-brand-amber-light: #fbbf24;
-  --color-brand-dark: #090a0f;
-  --color-brand-surface: #0f121d;
-  --color-brand-card: #131726;
-  --color-brand-border: #1e2538;
+  --color-brand-bg: #F5F0E8;
+  --color-brand-card: #EAE2D7;
+  --color-brand-oxblood: #641E2B;
+  --color-brand-oxblood-dark: #4F1722;
+  --color-brand-oxblood-light: #7E2636;
+  --color-brand-charcoal: #252321;
+  --color-brand-charcoal-muted: #5C554E;
+  --color-brand-terracotta: #B78B79;
+  --color-brand-terracotta-light: #CBB1A3;
+  --color-brand-border: #D8CEBF;
+  --color-brand-border-dark: #C6BBAA;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    color-scheme: dark;
+    color-scheme: light;
   }
   
   body {
-    background-color: #090a0f;
-    color: #e2e8f0;
+    background-color: #F5F0E8;
+    color: #252321;
     font-family: var(--font-sans);
     overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(245, 158, 11, 0.25);
-    color: #fef3c7;
+    background: rgba(100, 30, 43, 0.18);
+    color: #641E2B;
   }
 }
 
@@ -36,40 +42,42 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #090a0f;
+  background: #F5F0E8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #D4C9B9;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #B78B79;
 }
 
-/* Glassmorphism helpers */
+/* Editorial styling helpers */
 .glass-panel {
-  background: rgba(15, 18, 29, 0.7);
+  background: rgba(234, 226, 215, 0.78);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(216, 206, 191, 0.9);
+  box-shadow: 0 4px 20px -4px rgba(37, 35, 33, 0.05);
 }
 
 .glass-card {
-  background: rgba(19, 23, 38, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #EAE2D7;
+  border: 1px solid #D8CEBF;
+  box-shadow: 0 2px 8px -2px rgba(37, 35, 33, 0.04), 0 1px 4px -1px rgba(100, 30, 43, 0.03);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .glass-card:hover {
-  background: rgba(24, 30, 48, 0.75);
-  border-color: rgba(245, 158, 11, 0.25);
+  background: #F0E8DE;
+  border-color: rgba(100, 30, 43, 0.35);
+  box-shadow: 0 12px 28px -6px rgba(100, 30, 43, 0.09), 0 4px 12px -2px rgba(37, 35, 33, 0.05);
   transform: translateY(-2px);
 }
 
-/* Subtle tech grid motif */
+/* Editorial paper dot grid motif */
 .tech-grid-bg {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
+  background-color: #F5F0E8;
+  background-image: radial-gradient(rgba(100, 30, 43, 0.08) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
 }

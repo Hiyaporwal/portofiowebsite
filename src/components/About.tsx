@@ -23,84 +23,87 @@ export const About: React.FC = () => {
       title: 'Speaking',
       sub: 'Technical presentations & clear stakeholder communication',
       icon: Mic,
-      color: 'border-amber-500/30 text-amber-300 bg-amber-500/10',
+      color: 'border-[#641E2B]/25 text-[#252321] bg-[#EAE2D7]/80',
     },
     {
       title: 'Social Service',
       sub: 'Community initiatives & collaborative welfare projects',
       icon: HeartHandshake,
-      color: 'border-rose-500/30 text-rose-300 bg-rose-500/10',
+      color: 'border-[#B78B79]/40 text-[#252321] bg-[#EAE2D7]/80',
     },
     {
       title: 'Dancing',
       sub: 'Creative artistic reset & bodily discipline',
       icon: Sparkles,
-      color: 'border-purple-500/30 text-purple-300 bg-purple-500/10',
+      color: 'border-[#641E2B]/25 text-[#252321] bg-[#EAE2D7]/80',
     },
     {
       title: 'Collaborative Learning & Team Guidance',
       sub: 'Peer debugging, mentoring, and group problem solving',
       icon: Users,
-      color: 'border-blue-500/30 text-blue-300 bg-blue-500/10',
+      color: 'border-[#B78B79]/40 text-[#252321] bg-[#EAE2D7]/80',
     },
     {
       title: 'Yoga & Running / Fitness',
       sub: 'Daily endurance routines that anchor mental clarity',
       icon: Activity,
-      color: 'border-emerald-500/30 text-emerald-300 bg-emerald-500/10',
+      color: 'border-[#641E2B]/25 text-[#252321] bg-[#EAE2D7]/80',
     },
   ];
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden">
+    <section id="about" className="py-24 relative overflow-hidden bg-[#F5F0E8]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Heading */}
         <div className="flex flex-col items-start mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-amber-400 font-mono mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EAE2D7] border border-[#D8CEBF] text-xs text-[#641E2B] font-mono mb-3">
             <Compass className="w-3.5 h-3.5" />
             <span>BACKGROUND & IDENTITY</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#252321] tracking-tight">
             A little about me
           </h2>
-          <div className="w-16 h-1 bg-amber-500/80 rounded-full mt-3" />
+          <div className="w-16 h-1 bg-[#641E2B] rounded-full mt-3" />
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           {/* Left Narrative */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="glass-panel rounded-2xl p-6 sm:p-8 space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+            <div className="glass-panel rounded-2xl p-6 sm:p-8 space-y-4 text-[#453F3B] text-sm sm:text-base leading-relaxed">
               <p>
-                I am an <strong className="text-white font-semibold">Integrated M.Tech Computational Data Science student</strong> at{' '}
-                <span className="text-amber-300 font-medium">VIT Bhopal University</span>.
+                I am an <strong className="text-[#252321] font-bold">Integrated M.Tech Computational Data Science student</strong> at{' '}
+                <span className="text-[#641E2B] font-semibold">VIT Bhopal University</span>.
               </p>
               <p>
-                My work sits across data analytics, business intelligence, AI/ML, and software development. I have worked with business datasets, industrial process data, Power BI dashboards, machine learning models, REST APIs, PostgreSQL, and generative AI applications.
+                My work sits across data analytics, business intelligence, AI/ML, financial intelligence, and software development. I have worked with business datasets, financial market series, industrial process data, Power BI dashboards, machine learning models (XGBoost, Random Forest), deep learning architectures (LSTM, GRU), FinBERT NLP pipelines, REST APIs, PostgreSQL, and generative AI applications.
               </p>
               <p>
-                I enjoy learning by building and prefer projects where technology solves a practical problem — whether that means cleaning 18 months of handwritten industrial logs for copper flotation prediction, streamlining field team workflows through a custom ERP, or designing document search with retrieval-augmented generation.
+                I enjoy learning by building and prefer projects where technology solves a practical problem — whether that means engineering multi-model financial forecast pipelines with FinBERT sentiment, cleaning 18 months of handwritten industrial logs for copper recovery prediction, streamlining field team workflows through a custom ERP, or designing document search with retrieval-augmented generation.
               </p>
 
-              <div className="pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
-                <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
+              <div className="pt-4 border-t border-[#D8CEBF] flex flex-wrap gap-2 text-xs font-mono text-[#5C554E]">
+                <span className="px-2.5 py-1 rounded-md bg-[#F5F0E8] border border-[#D8CEBF] text-[#252321] font-medium">
+                  Financial ML &amp; FinBERT NLP
+                </span>
+                <span className="px-2.5 py-1 rounded-md bg-[#F5F0E8] border border-[#D8CEBF] text-[#252321] font-medium">
                   Data Cleaning &amp; Feature Prep
                 </span>
-                <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
+                <span className="px-2.5 py-1 rounded-md bg-[#F5F0E8] border border-[#D8CEBF] text-[#252321] font-medium">
                   Business Intelligence &amp; DAX
                 </span>
-                <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
+                <span className="px-2.5 py-1 rounded-md bg-[#F5F0E8] border border-[#D8CEBF] text-[#252321] font-medium">
                   Explainable AI &amp; SHAP
                 </span>
-                <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">
-                  Full Stack React &amp; PostgreSQL
+                <span className="px-2.5 py-1 rounded-md bg-[#F5F0E8] border border-[#D8CEBF] text-[#252321] font-medium">
+                  Full Stack Flask/React &amp; PostgreSQL
                 </span>
               </div>
             </div>
 
             {/* Small Personal Interests */}
             <div className="space-y-3">
-              <h3 className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-[#6B635B] flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-[#641E2B]" />
                 Interests &amp; Personal Energies
               </h3>
 
@@ -110,14 +113,14 @@ export const About: React.FC = () => {
                   return (
                     <div
                       key={pill.title}
-                      className={`p-3 rounded-xl border flex items-start gap-3 backdrop-blur-sm transition-all hover:scale-[1.01] ${pill.color}`}
+                      className={`p-3 rounded-xl border flex items-start gap-3 transition-all hover:scale-[1.01] ${pill.color}`}
                     >
-                      <div className="p-1.5 rounded-lg bg-black/40 mt-0.5">
+                      <div className="p-1.5 rounded-lg bg-[#F5F0E8] text-[#641E2B] border border-[#D8CEBF] mt-0.5">
                         <Icon className="w-4 h-4" />
                       </div>
                       <div>
-                        <div className="text-xs font-bold text-white tracking-wide">{pill.title}</div>
-                        <div className="text-[11px] text-slate-300 leading-snug mt-0.5">{pill.sub}</div>
+                        <div className="text-xs font-bold text-[#252321] tracking-wide">{pill.title}</div>
+                        <div className="text-[11px] text-[#5C554E] leading-snug mt-0.5">{pill.sub}</div>
                       </div>
                     </div>
                   );
@@ -129,14 +132,14 @@ export const About: React.FC = () => {
           {/* Right Highlights & Credentials Card */}
           <div className="lg:col-span-5 space-y-6">
             {/* Academic Snapshot Card */}
-            <div className="glass-card rounded-2xl p-6 sm:p-7 border border-slate-800 relative overflow-hidden">
+            <div className="glass-card rounded-2xl p-6 sm:p-7 relative overflow-hidden">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                <div className="w-10 h-10 rounded-xl bg-[#F5F0E8] border border-[#D8CEBF] flex items-center justify-center text-[#641E2B] shadow-xs">
                   <GraduationCap className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-white">Academic Credentials</h3>
-                  <p className="text-xs text-slate-400 font-mono">VIT Bhopal University</p>
+                  <h3 className="text-base font-bold text-[#252321]">Academic Credentials</h3>
+                  <p className="text-xs text-[#6B635B] font-mono">VIT Bhopal University</p>
                 </div>
               </div>
 
@@ -144,24 +147,24 @@ export const About: React.FC = () => {
                 {quickFacts.map((fact, idx) => (
                   <div
                     key={idx}
-                    className="p-3 rounded-xl bg-slate-900/70 border border-slate-800/80 flex flex-col justify-between"
+                    className="p-3 rounded-xl bg-[#F5F0E8] border border-[#D8CEBF] flex flex-col justify-between"
                   >
-                    <span className="text-[11px] font-mono text-slate-400 uppercase tracking-wider">
+                    <span className="text-[11px] font-mono text-[#736B63] uppercase tracking-wider">
                       {fact.label}
                     </span>
-                    <span className="text-sm font-semibold text-white mt-1">
+                    <span className="text-sm font-bold text-[#252321] mt-1">
                       {fact.value}
                     </span>
                   </div>
                 ))}
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-mono text-slate-400">
-                <span className="flex items-center gap-1.5 text-emerald-400">
+              <div className="mt-6 pt-4 border-t border-[#D8CEBF] flex items-center justify-between text-xs font-mono text-[#5C554E]">
+                <span className="flex items-center gap-1.5 text-[#641E2B] font-bold">
                   <CheckCircle2 className="w-4 h-4" />
                   Verified Credentials
                 </span>
-                <span className="text-slate-400">2023 – 2028 Cohort</span>
+                <span className="text-[#6B635B]">2023 – 2028 Cohort</span>
               </div>
             </div>
           </div>

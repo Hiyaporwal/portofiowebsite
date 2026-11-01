@@ -11,19 +11,19 @@ export const PersonalitySection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 relative bg-[#0a0d16] border-t border-slate-800/80">
+    <section className="py-20 relative bg-[#F5F0E8] border-t border-[#D8CEBF]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-amber-400 font-mono mb-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EAE2D7] border border-[#D8CEBF] text-xs text-[#641E2B] font-mono mb-2">
             <Heart className="w-3.5 h-3.5" />
-            <span>PERSONALITY &amp; PERSPECTIVE</span>
+            <span className="font-semibold tracking-wider">PERSONALITY &amp; PERSPECTIVE</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#252321] tracking-tight">
             Beyond the Code
           </h2>
-          <p className="text-slate-400 text-xs sm:text-sm mt-1">
-            Small personal energies that cultivate consistency, creative resets, and clear thinking.
+          <p className="text-[#5C554E] text-xs sm:text-sm mt-1">
+            Genuine personal habits that cultivate discipline, collaborative clarity, and creative resets.
           </p>
         </div>
 
@@ -35,26 +35,26 @@ export const PersonalitySection: React.FC = () => {
             return (
               <div
                 key={item.title}
-                className="glass-card rounded-2xl p-6 border border-slate-800/80 flex flex-col justify-between group hover:border-amber-500/30 transition-all duration-300"
+                className="bg-[#EAE2D7] rounded-2xl p-6 border border-[#D8CEBF] flex flex-col justify-between group hover:border-[#641E2B]/40 hover:bg-[#F0E9DF] transition-all duration-300 shadow-xs hover:shadow-md"
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-amber-400 group-hover:scale-105 transition-transform">
+                    <div className="w-9 h-9 rounded-xl bg-[#F5F0E8] border border-[#D8CEBF] flex items-center justify-center text-[#641E2B] group-hover:scale-105 transition-transform shadow-xs">
                       <Icon className="w-4 h-4" />
                     </div>
-                    <span className="text-[10px] font-mono text-slate-500 uppercase tracking-wider">
+                    <span className="text-[10px] font-mono text-[#8C827A] uppercase tracking-wider">
                       {item.tag}
                     </span>
                   </div>
 
-                  <h3 className="text-base font-bold text-white group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-base font-bold text-[#252321] group-hover:text-[#641E2B] transition-colors">
                     {item.title}
                   </h3>
-                  <div className="text-[11px] font-medium text-amber-400/80 font-mono mt-0.5 mb-2">
+                  <div className="text-[11px] font-medium text-[#641E2B] font-mono mt-0.5 mb-2">
                     {item.headline}
                   </div>
 
-                  <p className="text-xs text-slate-400 leading-relaxed">
+                  <p className="text-xs text-[#5C554E] leading-relaxed">
                     {item.description}
                   </p>
                 </div>

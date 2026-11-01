@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="16" fill="#090a0f"/>
-  <circle cx="32" cy="32" r="28" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 4" opacity="0.6"/>
-  <!-- Geometric H and P combined with data node -->
-  <path d="M 20 18 L 20 46 M 20 32 L 32 32 M 32 18 L 32 46" stroke="#f8fafc" stroke-width="3.5" stroke-linecap="round"/>
-  <circle cx="44" cy="26" r="8" fill="none" stroke="#f59e0b" stroke-width="3"/>
-  <circle cx="20" cy="18" r="3" fill="#f59e0b"/>
-  <circle cx="32" cy="46" r="3" fill="#38bdf8"/>
-  <circle cx="44" cy="26" r="3" fill="#10b981"/>
+  <rect width="64" height="64" rx="16" fill="#F5F0E8" stroke="#D8CEBF" stroke-width="2"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#641E2B" stroke-width="2" stroke-dasharray="6 3" opacity="0.6"/>
+  <!-- Geometric H and P combined with technical data node in Oxblood and Charcoal -->
+  <path d="M 20 18 L 20 46 M 20 32 L 32 32 M 32 18 L 32 46" stroke="#252321" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="44" cy="26" r="8" fill="none" stroke="#641E2B" stroke-width="3"/>
+  <circle cx="20" cy="18" r="3" fill="#641E2B"/>
+  <circle cx="32" cy="46" r="3" fill="#B78B79"/>
+  <circle cx="44" cy="26" r="3.5" fill="#641E2B"/>
 </svg>
